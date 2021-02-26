@@ -2,7 +2,7 @@ function search()
 {
     let searchId = document.getElementById("search").value;
     let site = 'https://www.google.com/search?q='+searchId;
-    window.open(site,'_blank');
+    window.open(site,'_self');
 }
 
 document.addEventListener("keydown", function(event) 
