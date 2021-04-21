@@ -1,0 +1,29 @@
+@import "main.css";
+
+html, body 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.header
+{
+    height: 5%;
+    background-color: #f876de;
+    background-image: linear-gradient(315deg, #f876de 0%, #b9d1eb 74%);
+}
+
+.main
+{
+    min-height: 100%;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    padding: 10px;
+}
+
+.footer
+{
+    height: 10%;
+    background-color: #9dc5c3;
+    background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+}
