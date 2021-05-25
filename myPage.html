@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myPage</title>
     <link rel="stylesheet" href="css/myPage.css">
+    <script src="main.js"></script>
 </head>
-<body>
-    
+<body onload="dateSetter()">
+    <div class="header">
+        <div class="links"><button><a href="ResonsiveGoogle.html">Links <img src="css/assets/search.svg" alt=""></a></button> </div>
+        <div class="weather">weather</div>
+    </div>
+    <div class="main">
+        <div class="hello">Hello Peeps.</div>
+        <p id="date"></p>
+        <p id="time"></p>
+        <p id="question">What is your main focus for today?</p>
+        <input type="text" id="text" autocomplete="off">
+    </div>
 </body>
 </html>
