@@ -1,14 +1,18 @@
 //search(start)
 function search()
 {
-    let searchId = document.getElementById("search").value;
-    let site = 'https://www.google.com/search?q='+searchId;
-    window.open(site,'_self');
+    if(document.getElementById("search").value=="")return;
+    else 
+    {
+        let searchId = document.getElementById("search").value;
+        let site = 'https://www.google.com/search?q='+searchId;
+        window.open(site,'_self');
+    }
 }
 
 document.addEventListener("keydown", function(event) 
 {
-    if (event.code === 'Enter') {
+    if (event.code === 'Enter' || event.code == 13) {
         search();
     }
 });
