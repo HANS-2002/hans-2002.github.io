@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="css/assets/doge.ico" />
     <title>myPage</title>
     <link rel="stylesheet" href="css/myPage.css">
     <script src="main.js"></script>
 </head>
 <body onload="dateSetter()">
-    <div class="header">
-        <div class="links"><button><a href="ResonsiveGoogle.html">Links <img src="css/assets/search.svg" alt=""></a></button> </div>
-        <div class="weather">weather</div>
+    <div id="weather" onclick="getLocation()">
+        <h1 id="temp"></h1>
+        <h1 id="location">Click to get weather</h1>
+        <h1 id="description"></h1>
     </div>
     <div class="main">
         <div class="hello">Hello Peeps.</div>
         <p id="date"></p>
         <p id="time"></p>
-        <p id="question">What is your main focus for today?</p>
-        <input type="text" id="text" autocomplete="off">
+        <p id="question">Search Something</p>
+        <div class="search">
+            <input type="text" id="search" autocomplete="off">
+            <button id="search_btn" onclick="search()"><img src="css/assets/search.svg"></button>
+        </div>
     </div>
 </body>
 </html>
